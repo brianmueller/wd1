@@ -24,6 +24,10 @@
             font-family: Verdana;
             color: #2e72a1;
         }
+        
+        h1,h3 {
+            text-align: center;
+        }
 
         a {
             color: #2e72a1;
@@ -35,8 +39,10 @@
             color: red;
         }
         
-        #w3schools-next {
+        .w3schools-next {
             width: 50px;
+            position:relative;
+            top: 6px;
         }
         
         code {
@@ -51,8 +57,9 @@
     <div class="container">
 
         <h1><a href="index.html">Web Development: Part 1</a> - Session 1</h1>
-        <h3>Intro & Basic Syntax</h3>
-        <p>By the end of this session, you will be able to create and host a webpage similar to this one.</p>
+        <h3>Intro & Basics</h3>
+        <p>By the end of this session, you will be able to create a webpage similar to this one.</p>
+        <a href="https://github.com/brianmueller/wd1/blob/master/session1.html" target="_blank">See the code for this webpage.</a>
         <hr>
 
         <h2>Do Now</h2>
@@ -90,10 +97,11 @@
         <h2>About the course/session</h2>
         <h4>Web Development: Part 1 - Session 1</h4>
         <ul>
+            <li><a href="https://docs.google.com/document/d/1L0SzCuBVetoByIZ9S95-urMiXm3G049Mx5LT7QA3Sy4/edit?usp=sharing" target="_blank">Live Q&A</a></a></li>
             <li>This course</li>
             <ul>
-                <li>Session 1: Intro & Basic Syntax</li>
-                <li>Session 2: Bootstrap & Advanced Design</li>
+                <li>Session 1: Intro & Basics</li>
+                <li>Session 2: Github & Bootstrap</li>
                 <li>Session 3: Templates</li>
             </ul>
             <li>Imposter Syndrome</li>
@@ -106,41 +114,52 @@
         <h4>The places to quickly and easily "play" with web design</h4>
         <ul>
             <li><a href="https://thimble.mozilla.org/en-US/" target="_blank">thimble.mozilla.org</a></li>
-            <li><a href="https://repl.it/languages/web_project">repl.it</a></li>
+            <li><a href="https://repl.it/languages/web_project" target="_blank">repl.it</a></li>
             <li><a href="http://jsbin.com" target="_blank">jsbin.com</a></li>
         </ul>
         <hr>
 
         <h2>HTML Basics</h2>
         <ul>
-            <li><a href="https://www.codecademy.com/courses/learn-html-elements/lessons/intro-to-html/exercises/intro">Codecademy "Learn HTML" Lessons 1-14
+            <li><a href="https://www.codecademy.com/courses/learn-html-elements/lessons/intro-to-html/exercises/intro" target="_blank">Codecademy "Learn HTML" Lessons 1-14
 </a></li>
-            <li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1">Codecademy "HTML Basics" Lessons 1-14</a></li>
-            <li><a href="https://www.codecademy.com/courses/make-a-website/lessons/site-structure/exercises/html-css">Codecademy "Make a Website" Lessons 1-13</a></li>
-            <li><a href="https://www.w3schools.com/html/">w3schools</a></li>
-            <ul><li>Go from chapter to chapter using <img src="img/w3schools-next.png" id="w3schools-next"></li></ul>
-            <li>Exercise: <a href="https://repl.it/repls/KnottyDrabArmyant">this</a> look like <a href="https://raw.githubusercontent.com/bmuellerhstat/html-basics/master/result.png" target="_blank">that</a>.</li>
+            <li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1" target="_blank">Codecademy "HTML Basics" Lessons 1-14</a></li>
+            <li><a href="https://www.codecademy.com/courses/make-a-website/lessons/site-structure/exercises/html-css" target="_blank">Codecademy "Make a Website" Lessons 1-13</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">w3schools</a></li>
+            <ul><li>Go from chapter to chapter using <img src="img/w3schools-next.png" class="w3schools-next"></li></ul>
+            <li>Exercise: make <a href="https://repl.it/repls/KnottyDrabArmyant">this</a> look like <a href="https://raw.githubusercontent.com/bmuellerhstat/html-basics/master/result.png" target="_blank">that</a>.</li>
         </ul>
         <hr>
         
         <h2>CSS Basics</h2>
         <ul>
-            <li><a href="https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1">Codecademy "CSS An Overview" Lessons 1-26</a></li>
-            <li><a href="https://www.codecademy.com/courses/learn-css-selectors-visual-rules/lessons/css-setup-selectors/exercises/intro-to-css">Codecademy "CSS Selectors" Lessons 1-16</a></li>
-            <li><a href="https://www.w3schools.com/css/">w3schools</a></li>
-            <ul><li>Go from chapter to chapter using <img src="img/w3schools-next.png" id="w3schools-next"></li></ul>
-            <li><a href="https://flukeout.github.io/">CSS Diner</a></li>
+            <li><a href="https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1" target="_blank">Codecademy "CSS An Overview" Lessons 1-26</a></li>
+            <li><a href="https://www.codecademy.com/courses/learn-css-selectors-visual-rules/lessons/css-setup-selectors/exercises/intro-to-css" target="_blank">Codecademy "CSS Selectors" Lessons 1-16</a></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">w3schools</a></li>
+            <ul><li>Go from chapter to chapter using <img src="img/w3schools-next.png" class="w3schools-next"></li></ul>
+            <li><a href="https://flukeout.github.io/" target="_blank">CSS Diner</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
         </ul>
         <hr>
         
         <h2>Tips and Tricks</h2>
         <ul>
             <li>Use <code>TAB</code> to indent and <code>SHIFT+TAB</code> to un-indent.</li>
+            <ul><li>Indentations tell the programmer which code is "inside" of other code.</li></ul>
+            <li>Comment and un-comment some code to see what it does.</li>
+            <ul>
+                <li><code>&lt;!-- this is an HTML comment --&gt;</code></li>
+                <li><code>// this is a CSS comment</code></li>
+                <li><code>/* this is also a CSS comment */</code></li>
+                <li>In most editors, pressing <code>⌘+/</code> on a Mac (or <code>CTRL+/</code> on a Windows) will toggle comment/un-comment.</li>
+            </ul>
+            <li><a href="http://htmlshell.com" target="_blank">HTML Shell</a> is a great place if you ever need the basic HTML structure quickly.</li>
+            <li>The <a href="http://color.adobe.com" target="_blank">Adobe Color Wheel</a> is a great place if you ever need a color scheme and its HEX/RGB color codes.</li>
+            <ul><li>Make sure you try both the <strong>Create</strong> and <strong>Explore</strong> tabs.</li></ul>
+            <li>Move around your computer faster with <a href="https://docs.google.com/document/d/10drl87oaEtmT6E2NQidNY3pKWYNXieEh7Kj-oZ7pDcA/preview" target="_blank">tiny.cc/keyboardshortcuts</a></li>
         </ul>
         
         
-        
-
     </div>
 
 </body>
