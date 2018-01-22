@@ -24,19 +24,23 @@
         h1 {
             font-size: 3em;
         }
-        
+
         h2 {
             font-size: 2em;
             color: #2e72a1;
-            
+
         }
-        
+
         h3 {
             font-size: 1.5em;
             color: #888;
             font-style: italic;
         }
-        
+
+        .navbar a {
+            font-weight: normal;
+        }
+
         a {
             color: #2e72a1;
             text-decoration: none;
@@ -46,7 +50,7 @@
         a:hover {
             color: red;
         }
-        
+
         code {
             color: #CE234C;
             background-color: #ffe9ec;
@@ -58,12 +62,28 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">WD 1.2</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li><span class="separator">•</span>
+                <li class="nav-item"><a class="nav-link" href="#internet">How the internet works</a></li>
+                <li class="nav-item"><a class="nav-link" href="#comparison">Text Editors + Github comparison</a></li>
+                <li class="nav-item"><a class="nav-link" href="#github">Github</a></li>
+                <li class="nav-item"><a class="nav-link" href="#editors">Text Editors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gh-pages">Github Pages</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container-fluid title">
-        <h1 class="text-center">Web Development: Part 1 - Session 1</h1>
+        <h1 class="text-center">Web Development: Part 1 - Session 2</h1>
         <h3 class="text-center">Bootstrap & Github</h3>
     </div>
-
-
 
     <div class="container">
         <hr>
@@ -73,17 +93,6 @@
             <li>Sign up for a <a href="https://github.com/">Github</a> account</li>
             <li>Start exploring <a href="https://getbootstrap.com/">Bootstrap</a></li>
         </ol>
-        <hr>
-
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="#bootstrap">Bootstrap</a></li>
-            <li><a href="#internet">How the internet works</a></li>
-            <li><a href="#comparison">Text Editors + Github comparison</a></li>
-            <li><a href="#github">Github</a></li>
-            <li><a href="#editors">Text Editors</a></li>
-            <li><a href="#gh-pages">Github Pages</a></li>
-        </ul>
         <hr>
 
         <h2 id="bootstrap">Bootstrap</h2>
