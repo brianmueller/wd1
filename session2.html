@@ -11,6 +11,7 @@
     <style>
         body {
             padding-top: 48px;
+            padding-bottom: 48px;
         }
 
         .title {
@@ -56,8 +57,8 @@
         .comparison td {
             font-size: 2em;
         }
-        
-        .card {
+
+        .github .card {
             margin-bottom: 20px;
             padding: 20px;
         }
@@ -103,7 +104,7 @@
         <h2 id="bootstrap">Bootstrap</h2>
         <ul class="list-group">
             <li class="list-group-item"><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Getting started</a></li>
-            <li class="list-group-item"><a href="https://getbootstrap.com/docs/4.0/layout/overview/" target="_blank">Layout</a></li>
+            <li class="list-group-item"><a href="https://getbootstrap.com/docs/4.0/layout/overview/" target="_blank" data-toggle="tooltip" data-placement="right" title="xs 768 sm 992 md 1200 lg">Layout*</a></li>
             <li class="list-group-item"><a href="https://getbootstrap.com/docs/4.0/content/" target="_blank" data-toggle="tooltip" data-placement="right" title="Make sure you explore all content from the LEFT sidebar!">Content*</a></li>
             <li class="list-group-item"><a href="https://getbootstrap.com/docs/4.0/components/" target="_blank" data-toggle="tooltip" data-placement="right" title="Make sure you explore all components from the LEFT sidebar!">Components*</a></li>
         </ul>
@@ -185,7 +186,7 @@
 
         <h2 id="github">Github</h2>
 
-        <div class="container">
+        <div class="container github">
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
@@ -275,10 +276,49 @@
         <hr>
 
         <h2 id="editors">Text Editors</h2>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Local Editors
+        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <a href="https://www.sublimetext.com/" target="_blank" data-toggle="tooltip" data-placement="right" title="Popular among developers">Sublime</a><br>
+                        <a href="https://atom.io/" target="_blank" data-toggle="tooltip" data-placement="right" title="Made by Github">Atom</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Cloud Editors
+        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <a href="https://codeanywhere.com/" target="_blank" data-toggle="tooltip" data-placement="right" title="Your best bet for a cloud editor right now.">Codeanywhere</a><br>
+                        <a href="https://aws.amazon.com/cloud9/" target="_blank" data-toggle="tooltip" data-placement="right" title="Better than Codeanywhere, but recently acquired by Amazon, so their pricing stinks now.">Cloud9</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr>
 
         <h2 id="gh-pages">Github Pages</h2>
-
+        <p>Host your code on Github without any "remix" button.</p>
+        <code>username.github.io/reponame</code>
+        <hr>
+        
+        <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk5qbcu2YByxTe9SpXi9f6xBo5u8tJq2bhDbEOJc2QqCuhFw/viewform" target="_blank">Micro Feedback</a></h2>
+        
     </div>
 
 
