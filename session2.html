@@ -53,8 +53,13 @@
             padding: 3px;
         }
 
-        td {
+        .comparison td {
             font-size: 2em;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            padding: 20px;
         }
     </style>
 
@@ -110,7 +115,7 @@
         <hr>
 
         <h2 id="comparison">Text Editors + Github comparison</h2>
-        <table class="table table-bordered">
+        <table class="table table-bordered comparison">
             <thead>
                 <tr>
                     <th scope="col"></th>
@@ -179,33 +184,91 @@
         <hr>
 
         <h2 id="github">Github</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Git</h3>
+                            <p class="card-text"><strong>Version Control</strong></p>
+                            <p class="card-text">Think of it like a "photographer" that takes "snapshots" of your code.</p>
+                            <p class="card-text">This allows you to track changes, revert to previous code, and more!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">Github</h3>
+                            <p class="card-text"><strong>Cloud storage + collaboration</strong></p>
+                            <p class="card-text">Push your changes to the cloud and see the differences visually.</p>
+                            <p class="card-text">Collaborate by pushing & pulling changes without stepping on each others' toes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Concept</th>
+                    <th scope="col">Explanation</th>
+                    <th scope="col">Photographer analogy</th>
+                    <th scope="col">Syntax (command line)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">Initialize</th>
+                    <td>Turns a folder into a Git repository</td>
+                    <td>"Hires" the Git photographer</td>
+                    <td><code>git init</code></td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <th scope="row">Add</th>
+                    <td>Adds certain files/folders to the staging area to be committed</td>
+                    <td>Puts "people" in the "frame" of a photo</td>
+                    <td>
+                        <code>git add .</code> (to add everything)<br>
+                        <code>git add filename.html</code> (to add one thing)<br>
+                        <code>git add --all</code> (to also include deleted/renamed files)
+                    </td>
+
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <th scope="row">Commit</th>
+                    <td>Saves the files that were added to the stage</td>
+                    <td>Photographer takes the photo</td>
+                    <td><code>git commit -m "this what I did since the last commit"</code> (except present tense)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Remote</th>
+                    <td>Connect the cloud repository to your local repo</td>
+                    <td>Pick a photo album to send your pictures to</td>
+                    <td><code>git remote add origin URL</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Push</th>
+                    <td>Send your local commits to the cloud repository</td>
+                    <td>Send photos to a photo album</td>
+                    <td>
+                        <code>git push -u origin master</code> (the first time)<br>
+                        <code>git push</code> (the rest of the times)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Pull</th>
+                    <td>Pull in any changes from your remote to your local repo</td>
+                    <td>Save photos in the album to your local collection</td>
+                    <td><code>git pull</code></td>
+                </tr>
+                <tr>
+                    <th scope="row">Revert</th>
+                    <td>Undo a commit</td>
+                    <td>Undo that horrible haircut you regret</td>
+                    <td><code>git revert c2e68ee36cc3b6ecb0249743f1b97fdfd0fc02a9</code> (this is your unique commit identifier)</td>
                 </tr>
             </tbody>
         </table>
