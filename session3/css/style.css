@@ -618,6 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .portfolio-grid .row > div .card img {
   width: 100%;
+  opacity: 0;
 }
 
 .portfolio-grid .row > div .card .portfolio-over {
@@ -660,6 +661,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 .portfolio-grid .row > div .card:hover .portfolio-over {
   opacity: 1;
   visibility: visible;
+}
+
+.portfolio-text {
+  position: absolute;
+  top:0;
+  padding: 54px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  font-color: #2e72a1;
 }
 
 /* ==================================================
