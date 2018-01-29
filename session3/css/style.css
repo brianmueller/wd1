@@ -665,28 +665,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ==================================================
   Team Styling
   ================================================== */
-.team h2 {
-  color: #2e72a1;
+.cta h2 {
+  color: #fff;
+  padding: 20px;
 }
 
-.team .col-sm-3 {
+.cta .col-sm-3 {
   padding: 0;
 }
 
-.team .card > a {
+.cta .card > a {
   display: block;
 }
 
-.team .card img {
+.cta .card img {
   width: 100%;
 }
 
-.team .card h4 {
+.cta .card h4 {
   color: #fff;
   text-transform: uppercase;
 }
 
-.team .card p {
+.cta .card p {
   font-size: 11px;
   color: #fff;
   opacity: .75;
@@ -694,34 +695,34 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 35px;
 }
 
-.team .card .social-nav {
+.cta .card .social-nav {
   margin-bottom: 45px;
 }
 
-.team .card .social-nav a {
+.cta .card .social-nav a {
   color: #fff;
   font-size: 16px;
   margin: 0 4px;
 }
 
-.team .card .social-nav a:hover {
+.cta .card .social-nav a:hover {
   opacity: .75;
 }
 
-.team .card:hover .team-over {
+.cta .card:hover .cta-over {
   opacity: 1;
   visibility: visible;
 }
 
-.team .card:hover .card-title-wrap {
+.cta .card:hover .card-title-wrap {
   background-color: #2e72a1;
 }
 
-.team .card:hover .card-title-wrap .card-title, .team .card:hover .card-title-wrap .card-text {
+.cta .card:hover .card-title-wrap .card-title, .cta .card:hover .card-title-wrap .card-text {
   color: #fff;
 }
 
-.team .team-over {
+.cta .cta-over {
   padding-top: 45px;
   position: absolute;
   width: 100%;
@@ -738,27 +739,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease;
 }
 
-.team .card-title-wrap {
+.cta .card-title-wrap {
   padding: 15px 25px;
   position: relative;
   z-index: 9;
-  background-color: #fff;
+  background-color: #2e72a1;
 }
 
-.team .card-title-wrap .card-title, .team .card-title-wrap .card-text {
+.cta .card-title-wrap .card-title, .cta .card-title-wrap .card-text {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   display: block;
   margin: 0;
 }
 
-.team .card-title-wrap .card-title {
+.cta .card-title-wrap .card-title {
   font-size: 24px;
-  color: #333;
+  color: #eee;
+  font-weight:bold;
 }
 
-.team .card-title-wrap .card-text {
+.cta .card-title-wrap .card-text {
   font-size: 18px;
-  color: #999;
+  color: #ccc;
 }
 
 /* ==================================================
@@ -954,10 +956,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   .portfolio-grid .card .card-text {
     font-size: 13px;
   }
-  .team .team-over {
+  .cta .cta-over {
     padding-top: 20px;
   }
-  .team .card .social-nav {
+  .cta .card .social-nav {
     margin-bottom: 15px;
     padding: 0;
   }
