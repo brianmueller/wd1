@@ -89,7 +89,7 @@
           <li><a href="#about">Do Now</a></li>
           <li><a href="#features">Basics</a></li>
           <li><a href="#team">Bootstrap Practice</a></li>
-          <li><a href="#">Github</a></li>
+          <li><a href="#contact">Github</a></li>
           <li><a href="#portfolio">Templates</a></li>
         </ul>
       </nav>
@@ -112,7 +112,7 @@
       </h2>
 
       <p>
-        Use <a href="http://jsbin.com/huwalisigi/edit?html,output">this starter code</a> and do your best to get this result:
+        Use <a href="http://jsbin.com/huwalisigi/edit?html,output" target="_blank">this starter code</a> and do your best to get this result:
       </p>
 
       <div class="row stats-row">
@@ -334,106 +334,245 @@
               <div class="card-title-wrap text-center">
                 <span class="card-title">Jumbotron</span> <span class="card-text">Make something stand out</span>
               </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="col-sm-3 col-xs-6">
-        <div class="card card-block">
-          <a href="#" target="_blank">
+        <div class="col-sm-3 col-xs-6">
+          <div class="card card-block">
+            <a href="#" target="_blank">
               <div class="card-title-wrap text-center">
                 <span class="card-title">Form</span> <span class="card-text">Collect various input from the user</span>
               </div>
 
-        </a>
-      </div>
-    </div>
+            </a>
+          </div>
+        </div>
 
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#" target="_blank">
+        <div class="col-sm-3 col-xs-6">
+          <div class="card card-block">
+            <a href="#" target="_blank">
               <div class="card-title-wrap text-center">
                 <span class="card-title">Card</span> <span class="card-text">Visually appealing groupings</span>
               </div>
 
-      </a>
-    </div>
-    </div>
+            </a>
+          </div>
+        </div>
 
-    <div class="col-sm-3 col-xs-6">
-      <div class="card card-block">
-        <a href="#" target="_blank">
+        <div class="col-sm-3 col-xs-6">
+          <div class="card card-block">
+            <a href="#" target="_blank">
               <div class="card-title-wrap text-center">
                 <span class="card-title">Accordion</span> <span class="card-text">Collapsible containers that reveal stuff</span>
               </div>
-      </a>
-    </div>
-    </div>
-    </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- /Team -->
   <!-- @component: footer -->
 
-  <!--<section id="contact">-->
-  <!--  <div class="container">-->
-  <!--    <div class="row">-->
-  <!--      <div class="col-md-12 text-center">-->
-  <!--        <h2 class="section-title">Contact Us</h2>-->
-  <!--      </div>-->
-  <!--    </div>-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title">Github</h2>
+        </div>
+      </div>
 
-  <!--    <div class="row justify-content-center">-->
-  <!--      <div class="col-lg-3 col-md-4">-->
-  <!--        <div class="info">-->
-  <!--          <div>-->
-  <!--            <i class="fa fa-map-marker"></i>-->
-  <!--            <p>A108 Adam Street<br>New York, NY 535022</p>-->
-  <!--          </div>-->
+      <div class="container github">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <!--<div class="card">-->
+            <div class="card-block">
+              <h3 class="card-title">Git</h3>
+              <p class="card-text"><strong>Version Control</strong></p>
+              <p class="card-text">Think of it like a "photographer" that takes "snapshots" of your code.</p>
+              <p class="card-text">This allows you to track changes, revert to previous code, and more!</p>
+            </div>
+            <!--</div>-->
+          </div>
+          <div class="col-md-6 text-center">
+            <!--<div class="card">-->
+            <div class="card-block">
+              <h3 class="card-title">Github</h3>
+              <p class="card-text"><strong>Cloud storage + collaboration</strong></p>
+              <p class="card-text">Push your changes to the cloud and see the differences visually.</p>
+              <p class="card-text">Collaborate by pushing & pulling changes without stepping on each others' toes.</p>
+            </div>
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+      <br>
 
-  <!--          <div>-->
-  <!--            <i class="fa fa-envelope"></i>-->
-  <!--            <p>info@example.com</p>-->
-  <!--          </div>-->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Concept</th>
+            <th scope="col">Explanation</th>
+            <th scope="col">Photographer analogy</th>
+            <th scope="col">Syntax (command line)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Initialize</th>
+            <td>Turns a folder into a Git repository</td>
+            <td>"Hires" the Git photographer</td>
+            <td><code>git init</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Add</th>
+            <td>Adds certain files/folders to the staging area to be committed</td>
+            <td>Puts "people" in the "frame" of a photo</td>
+            <td>
+              <code>git add .</code> (to add everything)<br>
+              <code>git add filename.html</code> (to add one thing)<br>
+              <code>git add --all</code> (to also include deleted/renamed files)
+            </td>
 
-  <!--          <div>-->
-  <!--            <i class="fa fa-phone"></i>-->
-  <!--            <p>+1 5589 55488 55s</p>-->
-  <!--          </div>-->
+          </tr>
+          <tr>
+            <th scope="row">Commit</th>
+            <td>Saves the files that were added to the stage</td>
+            <td>Photographer takes the photo</td>
+            <td><code>git commit -m "this what I did since the last commit"</code> (except present tense)</td>
+          </tr>
+          <tr>
+            <th scope="row">Remote</th>
+            <td>Connect the cloud repository to your local repo</td>
+            <td>Pick a photo album to send your pictures to</td>
+            <td><code>git remote add origin URL</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Push</th>
+            <td>Send your local commits to the cloud repository</td>
+            <td>Send photos to a photo album</td>
+            <td>
+              <code>git push -u origin master</code> (the first time)<br>
+              <code>git push</code> (the rest of the times)
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Pull</th>
+            <td>Pull in any changes from your remote to your local repo</td>
+            <td>Save photos in the album to your local collection</td>
+            <td><code>git pull</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Revert</th>
+            <td>Undo a commit</td>
+            <td>Undo that horrible haircut you regret</td>
+            <td><code>git revert c2e68ee36cc3b6ecb0249743f1b97fdfd0fc02a9</code> (this is your unique commit identifier)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
 
-  <!--        </div>-->
-  <!--      </div>-->
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Local</h1>
+          <ol>
+            <li>Install <a href="https://www.sublimetext.com/" target="_blank">Sublime</a> or <a href="https://atom.io/" target="_blank">Atom</a>.</li>
+            <li>Install <a href="https://desktop.github.com/" target="_blank">Github Desktop</a>.</li>
+            <li>Follow <a href="https://help.github.com/desktop-classic/guides/getting-started/" target="_blank">this guide</a> to get signed in.</li>
+            <li><a href="https://programminghistorian.org/lessons/getting-started-with-github-desktop#creating-a-document" target="_blank">This tutorial</a> will walk you through the process of <code>add</code>ing, <code>commit</code>ting, and <code>push</code>ing.</li>
+          </ol>
+        </div>
 
-  <!--      <div class="col-lg-5 col-md-8">-->
-  <!--        <div class="form">-->
-  <!--          <div id="sendmessage">Your message has been sent. Thank you!</div>-->
-  <!--          <div id="errormessage"></div>-->
-  <!--          <form action="" method="post" role="form" class="contactForm">-->
-  <!--            <div class="form-group">-->
-  <!--              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />-->
-  <!--              <div class="validation"></div>-->
-  <!--            </div>-->
-  <!--            <div class="form-group">-->
-  <!--              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
-  <!--              <div class="validation"></div>-->
-  <!--            </div>-->
-  <!--            <div class="form-group">-->
-  <!--              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
-  <!--              <div class="validation"></div>-->
-  <!--            </div>-->
-  <!--            <div class="form-group">-->
-  <!--              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
-  <!--              <div class="validation"></div>-->
-  <!--            </div>-->
-  <!--            <div class="text-center"><button type="submit">Send Message</button></div>-->
-  <!--          </form>-->
-  <!--        </div>-->
-  <!--      </div>-->
+        <div class="col-sm-6">
+          <h1>Cloud</h1>
+          <ol>
+            <li>Sign up for a <a href="https://codeanywhere.com/" target="_blank">Codeanywhere</a> account using your Github <img src="img/github.png" style="height:40px;"></li>
+            <ul><li>Check your email to verify your account.</li></ul>
+            <li>Create a new container</li>
+            <ul>
+              <li><strong>Name:</strong> anything (name username, HTML, etc)</li>
+              <li><strong>Stack:</strong> HTML (Ubuntu)</li>
+              <li style=""><strong>Enable Always On:</strong> only works for paid accounts</li>
+            </ul>
+            <li>We logged in to Codeanywhere with Github, but we still need to authorize Codeanywhere to push your code to Github!</li>
+            <ol>
+              <li>Go to your <a href="https://codeanywhere.com/dashboard" target="_blank">dashboard</a></li>
+              <li>In the left sidebar, click SSH keys</li>
+              <li>Select & copy the entire SSH key</li>
+              <li>Back on <a href="http://github.com/" target="_blank">Github</a>, go to your profile settings > SSH and GPG keys</li>
+              <li>Add a <strong>New SSH key</strong></li>
+              <li><strong>Title:</strong> Codeanywhere</li>
+              <li><strong>Key:</strong> Paste!</li>
+            </ol>
+            <li>Navigate to your command line in Codeanywhere</li>
+            <ul>
+              <li><img src="img/codeanywhere-cl.png" style="width:300px;"></li>
 
-  <!--    </div>-->
-  <!--  </div>-->
-  <!--</section>-->
-  <!-- /contact -->
+              <li>If you feel uncomfortable with the command line, here are some good resources:</li>
+              <li><a href="https://www.google.com/search?q=github+cheat+sheet" target="_blank">Github Cheat Sheets</a></li>
+              <li><a href="https://www.google.com/search?q=command+line+cheat+sheet" target="_blank">Command Line Cheat Sheets</a></li>
+              <li><a href="https://try.github.io/levels/1/challenges/1" target="_blank">Try Git</a></li>
+              <li><a href="https://www.codecademy.com/learn/learn-the-command-line" target="_blank">Command Line on Codecademy</a></li>
+            </ul>
+            <li>Let's run some commands. Again, you may want to come back later and familiarize yourself with some of these commands later.</li>
+            <ol>
+              <li><code>mkdir first-repo</code> makes a new directory</li>
+              <li><code>cd first-repo</code> goes into that new directory</li>
+              <li><code>git init</code> turns the folder into a repo (hires git)</li>
+              <li><code>touch index.html</code> makes a new file</li>
+              <li>Right-click on your <strong>Connection</strong> in the left sidebar and press <strong>Refresh</strong></li>
+              <li>Expand <code>first-repo</code> and open <code>index.html</code></li>
+              <li>Paste in some starter code from <a href="http://htmlshell.com" target="_blank">HTMLshell</a> and add whatever code you want</li>
+              <li>SAVE!</li>
+              <li><code>git status</code> to see that this file has been edited (it's in red)</li>
+              <li><code>git add index.html</code> to add the file to stage, ready to be committed</li>
+              <li><code>git status</code> to see that the file is on the stage (it's in green)</li>
+              <li><code>git commit -m "start index"</code> to take a "snapshot" of your file (use whatever message you want)</li>
+            </ol>
+            <li>Now we need to make a home for the repo on Github so that we can push!</li>
+            <ol>
+              <li>Go to Github and press + to make a new repository</li>
+              <li>Give it the <strong>same name:</strong> <code>first-repo</code> and press <strong>Create repository</strong></li>
+              <li>Make sure you select <strong>SSH</strong> at the top</li>
+              <li>Copy/paste the code that says <code>git remote add origin URL</code></li>
+              <li>Copy/paste the code that says <code>git push -u origin master</code></li>
+            </ol>
+            <li>In the future, you can continue to:</li>
+            <ol>
+              <li>edit</li>
+              <li><code>git add index.html</code> (or <code>git add .</code> to add everything)</li>
+              <li><code>git commit -m "message"</code></li>
+              <li><code>git push</code> (after you push the first time, you no longer need to include the <code>-u origin master</code>)</li>
+            </ol>
+          </ol>
+        </div>
+      </div>
+      <br>
+      <div class="jumbotron col-md-8 offset-md-2">
+        <h1>Github Pages</h1>
+        <p>Host your code on Github without any "remix" button.</p>
+        <ul>
+          <li>Make sure you have a repository on Github.</li>
+          <li>Go into the <strong>Settings</strong> ⚙️</li>
+          <li>Scroll down to the <strong>Github Pages</strong> section</li>
+          <li>Change the <strong>Source</strong> to the <strong>master branch</strong> and press <strong>save</strong></li>
+        </ul>
+        <code>username.github.io/reponame</code>
+        <ul>
+          <li>NOTE 1: Your page may take up to a few minutes to show up at the URL.</li>
+          <li>NOTE 2: If your page isn't named <code>index.html</code>, then add it to the end of the URL</li>
+          <ul>
+            <li>i.e. <code>username.github.io/reponame/home.html</code></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--/contact -->
+
+
+
 
   <!-- Portfolio -->
 
@@ -592,6 +731,14 @@
   </section>
   <!-- /Portfolio -->
 
+  <div class="container text-center">
+    <br>
+    <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk5qbcu2YByxTe9SpXi9f6xBo5u8tJq2bhDbEOJc2QqCuhFw/viewform" target="_blank">Micro Feedback</a></h2>
+    <h2><a href="https://docs.google.com/document/d/1L0SzCuBVetoByIZ9S95-urMiXm3G049Mx5LT7QA3Sy4/edit?usp=sharing" target="_blank">Live Q&A</a></h2>
+
+
+  </div>
+
   <footer class="site-footer">
     <div class="bottom">
       <div class="container">
@@ -612,33 +759,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="index.html">Home</a>
-              </li>
 
-              <li class="list-inline-item">
-                <a href="#about">About Us</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a href="#features">Features</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a href="#portfolio">Portfolio</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a href="#team">Team</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
 
         </div>
       </div>
